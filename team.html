@@ -25,6 +25,26 @@
         .w-80 {
             width: 80%;
         }
+
+        @media (min-width: 800px){
+            .w-md-25{
+                width: calc(25% - 1rem) !important;
+                margin: 0.5rem;
+            }
+        }
+        @media (min-width: 450px) and (max-width: 800px){
+            .w-md-25{
+                width: calc(50% - 1rem) !important;
+                margin: 0.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+        @media (max-width: 450px){
+            .w-md-25{
+                width: calc(100% - 1rem) !important;
+                margin: 0.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -54,55 +74,46 @@
                             <a class="nav-link" href="#links">Contact</a>
                         </li>
                     </ul>
-                    <!-- <ul class="navbar-nav ms-auto align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link material-symbols-outlined" href="#">light_mode</a>
-                        </li>
-                    </ul> -->
                 </div>
             </div>
         </nav>
-        <div class="px-4 py-5 text-center bg-light w-100">
+        <div class="px-3 py-5 text-center bg-light w-100">
             <h1 class="fw-bold display-4 mb-4">Team</h1>
-            <div class="card-container d-flex flex-row">
-                <div class="card w-25 m-1">
+            <div class="card-container d-flex flex-row flex-wrap">
+                <div class="card w-md-25">
                     <div class="card-body">
                         <img src="default.svg" alt="..." class="mb-2 rounded-3">
                         <h5 class="card-title">Pseudo Name</h5>
                         <p class="card-text">They haven't ever done competition math. This is probably because they
                             don't exist. akls;dfja;dskljf ;alksdjf;a sdkjfl;asdkfj; They aren't even an actual part of
                             the team.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card w-25 m-1">
+                <div class="card w-md-25">
                     <div class="card-body">
                         <img src="default.svg" alt="..." class="mb-2 rounded-3">
                         <h5 class="card-title">Pseudo Name</h5>
                         <p class="card-text">They haven't ever done competition math. This is probably because they
                             don't exist. akls;dfja;dskljf ;alksdjf;a sdkjfl;asdkfj; They aren't even an actual part of
                             the team.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card w-25 m-1">
+                <div class="card w-md-25">
                     <div class="card-body">
                         <img src="default.svg" alt="..." class="mb-2 rounded-3">
                         <h5 class="card-title">Pseudo Name</h5>
                         <p class="card-text">They haven't ever done competition math. This is probably because they
                             don't exist. akls;dfja;dskljf ;alksdjf;a sdkjfl;asdkfj; They aren't even an actual part of
                             the team.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card w-25 m-1">
+                <div class="card w-md-25">
                     <div class="card-body">
                         <img src="default.svg" alt="..." class="mb-2 rounded-3">
                         <h5 class="card-title">Pseudo Name</h5>
                         <p class="card-text">They haven't ever done competition math. This is probably because they
                             don't exist. akls;dfja;dskljf ;alksdjf;a sdkjfl;asdkfj; They aren't even an actual part of
                             the team.</p>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
             </div>
