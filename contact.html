@@ -26,6 +26,10 @@
         .w-80 {
             width: 80%;
         }
+
+        a {
+            color: inherit !important;
+        }
     </style>
 </head>
 
@@ -59,20 +63,13 @@
             </div>
         </nav>
         <div class="px-4 py-5 text-center w-80 m-auto">
-            <h1 class="fw-bold display-4">BROOM</h1>
-            <h3 class="fw-bold display-8">
-                Building Resolve and Opportunity for Oncoming MOPpers
-            </h3>
-            <div class="mx-auto lead mb-2">
-                BROOM is a collaborative, highly intensive online math program modeled
-                after MOP, open to students entering 9th grade and above. The program is
-                designed by many past and current MOPpers to bring the MOP experience to
-                everyone.
-            </div>
-            <a href="https://tinyurl.com/broom25"><button class="btn btn-primary">Join the Discord</button></a>
-            <a href="./about.html">
-                <button class="btn btn-outline-secondary">Learn more <i class="bi bi-arrow-right"></i></button>
-            </a>
+            <h1 class="fw-bold display-4">Contact</h1>
+            <a href="https://tinyurl.com/broom25"><button class="btn btn-outline-secondary btn-lg" data-bs-toggle="tooltip" data-bs-title="Discord" data-bs-placement="bottom">
+                <i class="bi bi-discord"></i>
+            </button></a>
+            <a href="mailto:broomprogram2025@gmail.com"><button class="btn btn-outline-secondary btn-lg" data-bs-toggle="tooltip" data-bs-title="Email" data-bs-placement="bottom">
+                <i class="bi bi-envelope"></i>
+            </button></a>
         </div>
         <div class="container mt-auto">
             <p class="text-center text-body-secondary">© 2025 BROOM</p>
@@ -81,6 +78,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 
 </html>
